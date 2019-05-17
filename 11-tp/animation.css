@@ -1,0 +1,64 @@
+
+.content {
+    width: 500px;
+    height: 500px;;
+    margin:100px;
+   
+}
+
+@keyframes animationRect {
+    from{
+
+      background-color: blue;
+      transform: rotate(0deg);
+    }
+   
+    to {
+        background-color: red;
+        transform: rotate(360deg);
+    }
+  }
+
+ 
+  
+  @keyframes animationHover {
+  from {
+    width: 200px;
+  }
+  to {
+   width: 350px;
+   transform: rotate(360deg);
+   
+  }
+}
+
+
+  .rect {
+   margin: 0 auto;
+
+     width: 200px;
+     height: 200px;
+     background-color: blue;
+
+
+     animation-name: animationRect;
+    animation-duration: 4s; /* or: Xms */
+    animation-iteration-count: 10;
+    animation-direction: normal; /* or: normal */
+    animation-timing-function: ease-in-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+    animation-fill-mode: both; /* or: backwards, both, none */
+   
+     
+  }
+
+  .rect:hover {
+     animation-name: animationHover;
+    animation-duration: 0.2s; /* or: Xms */
+    animation-direction: normal; /* or: normal */
+    animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+    animation-fill-mode: forwards; /* or: backwards, both, none */
+    
+
+    
+    
+  }
